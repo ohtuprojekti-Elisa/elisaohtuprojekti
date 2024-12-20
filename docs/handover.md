@@ -24,7 +24,10 @@ If you’ve started the app in Unity or using the VR headset and are not seeing 
 The python files are found in the data_processing folder and have been added to OpenShift. These files have docstring documentation but the basic idea is as follows:
 - **gsi_data_receiver.py**: This file is responsible for receiving data. However, this step has become redundant, so feel free to refactor or remove it.
 - **gsi_processor.py**: This file processes and reorganizes the GSI data. Currently, it primarily creates a new dictionary with filtered data. An example of processing done in this step is calculating the KDR (Kill-Death Ratio), which offloads calculations from the Unity scripts. The processed game_data dictionary is then passed to the encoder and the database updater.
-- **gsi_encoder.py**: This file updates various JSON files based on the type of data (e.g., player_positions, player_data, match_data).
+- **gsi_encoding.py**: This file updates various JSON files based on the type of data (e.g., player_positions, player_data, match_data).
+- **routes.py**: Handles the different routes
+- **app.py, db.py**: Initializes the flask app and the database
+- **init.py**: Initializes the database when executed
   
 The updated JSON files are hosted on OpenShift domains, where the Unity script GSIDataReceiver.cs fetches them. For example:
 https://gsi-ohtuprojekti-staging.apps.ocp-test-0.k8s.it.helsinki.fi/statistics
@@ -88,6 +91,11 @@ Logic
 The "HeatmapPlayerMovement" script is responsible for generating the heat on the map. The logic involves creating differently colored clones of the Trace prefab, which is referred to as "TraceMaker" in the hierarchy. These clones are used to represent the varying intensities of the heatmap.
 
 ## Openshift
+We have the serverside of the project in openshift called elisaohtuprojekti that contains dockerfile pod called gsi. It contains the python flask script to get the data to server and post it to different routes. The server also contains the database script which sends the data to the database in openshift. You can find the env variables in secrets of the openshift. 
+
+To initialize database, I have provided you the init.py that you have to run in openshift terminal. This puts the schema.sql in database.
+
+To update the file in openshift, you have to build the dockerfile in it. Then you have to push the dockerfile to quay.io or docker.io (I recommend quay). After that you have to update the docker address by editing the pod.
 
 ## Testing
 We have initialized Pylint for python files.
