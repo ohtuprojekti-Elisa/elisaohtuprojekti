@@ -4,6 +4,22 @@ Since this app was our team's first Unity and VR project, we faced a significant
 ## Harware requirements
 If you are using the university laptop you might run into some difficulties. CS2 does not run on the uni laptops. Unity works but might have some performance issues. We all had to use desktops to be able to properly work on this app. 
 
+## App not working?
+If you’ve started the app in Unity or using the VR headset and are not seeing the data update, here are the most common solutions to troubleshoot the issue:
+1. Follow the Setup Instructions
+    - Double-check that you’ve followed all the steps outlined in our instructions found in the [README.md](https://github.com/NikiPOU/elisaohtuprojekti/?tab=readme-ov-file#instructions) file.
+
+2. Ensure a Spectator is in the Game
+    - Make sure someone has entered a game of CS2 as a **spectator**.
+    - Note: CS2 restricts GSI data for non-spectators as part of its anti-cheat measures.
+
+3. Verify the .cfg File
+    - Confirm that the .cfg file has been placed in the correct cfg folder on the device running the CS2 game. There is an example of a correct file path in README.md but the path might vary depending on the device.
+
+4. Check Network Connections
+    - Ensure that both the device running CS2 and the device running the app (in Unity or on the VR headset) are connected to the University of Helsinki’s network.
+    - [VPN instructions](https://helpdesk.it.helsinki.fi/kirjautuminen-ja-yhteydet/verkkoyhteydet/yhteydet-yliopiston-ulkopuolelta).
+
 ## What all the python files are for
 The python files are found in the data_processing folder and have been added to OpenShift. These files have docstring documentation but the basic idea is as follows:
 - **gsi_data_receiver.py**: This file is responsible for receiving data. However, this step has become redundant, so feel free to refactor or remove it.
@@ -28,8 +44,15 @@ There is a bug in Unity which makes the scene view appear red instead of the act
 
 ## Database
 We have initialized a PostgreSQL database, which has been deployed to OpenShift. However, it is still in its early stages and is not currently being used by the app. The schema.sql file can be found in the data_processing folder. The database is updated with new GSI data through the database.updator.py file in the same folder. At this stage, we have not yet implemented a method to access the database data from Unity.
-## Live broadcast
 
+## Live broadcast
+Currently, the video playing at the center of the app is a screen recording of a professional match. This video is intended only as a placeholder to demonstrate what the app would look like with a live broadcast in the middle. The screen recording is coded to start playing when the GSI data indicates round 0 has begun and then waits 20 seconds (the warmup time). This hardcoded solution was meant solely for the final demonstration. The video itself is only a few minutes long.
+
+Our original plan was to implement a live broadcast by, for example, streaming our games to a platform and then linking the stream's URL to the Unity video element via a C# script. This would allow the broadcast to be displayed within the app. However, we encountered several challenges, including:
+
+- The broadcast needing to be in a very specific format. [Here](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html) is more information about the accepted video formats in Unity. We didn't get .mp4 to work but .webm worked.  
+- Restrictions from most streaming platforms (such as YouTube) that prohibit embedding live streams into Unity.
+  
 ## 3D Map
 Currently the only 3D map in the project is the older version of Dust 2. Some other old maps are downloadable online but they might not work depoending how much the map has changed between versions. 
 
