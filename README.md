@@ -24,8 +24,8 @@ In order to use this app, you need to fullfill the following requirements:
 1. Clone this repository to your local device.
 2. Open the cloned project in Unity.
 3. Make sure you are connected to the University of Helsinki's network. [Steps to Connect to OpenVPN](https://helpdesk.it.helsinki.fi/kirjautuminen-ja-yhteydet/verkkoyhteydet/yhteydet-yliopiston-ulkopuolelta)
-4. Join a game in CS2 as a **spectator**.
-5. ?
+4. Join a game in CS2 as a **spectator** OR play a demo by using playdemo command in CS2 console and downloading the demo and putting it to Counter-Strike Global Offensive/game/csgo
+5. Enter the play-mode in unity (optional: Activate the simulator to use vr controllers when testing with pc)
 
 ## Documentation
 ### Architecture
