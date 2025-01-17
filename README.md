@@ -1,6 +1,6 @@
-# Elisa ESports Immersive coaching tool - Ohtuprojekti
+# Elisa eSports - Immersive Coaching Tool
 
-A prototype of an AR Counter-Strike 2 coaching/refereeing tool for Elisa eSports. This tool allows users to watch a game broadcast while viewing real-time game statistics, interacting with a 3D map from a birds-eye view, and utilizing various features.
+A prototype AR tool for Counter-Strike 2 coaching and refereeing, developed for Elisa eSports. This tool enables users to watch game broadcasts while accessing real-time game statistics, interacting with a 3D bird's-eye-view map, and utilizing various advanced features. This tool was developed as part of a Software Engineering Lab project for the Department of Computer Science at the University of Helsinki.
 
 ## Implementation
 - Implemented for Meta Quest VR headsets (Android-based)
@@ -18,7 +18,7 @@ In order to use this app, you need to fullfill the following requirements:
 
 ### Configuration for Counter-Strike 2
 1. Navigate to your game's configuration (cfg) folder. Example - C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
-2. Add [this](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/gsi/gamestate_integration_example.cfg) configuration file to the cfg folder.
+2. Add [this](counter_strike_2/gsi/gamestate_integration_example.cfg) configuration file to the cfg folder.
 
 ### Launching the app in Unity
 1. Clone this repository to your local device.
@@ -31,31 +31,21 @@ In order to use this app, you need to fullfill the following requirements:
 Note: Unity can be slow. Be patient and give it time.
 
 ## Documentation
+
 ### Architecture
 - [Class diagram](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/class_diagram.md)
 - [Architecture diagram and documentation](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/architecture.md)
+
 ### Practices
 - [Definition of Done](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/definition_of_done.md)
+
 ### For those wanting to continue this project
 - [Handover](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/handover.md)
+
 ### Client meetings
-- [Client meeting 0](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_0.md)
-- [Client meeting 1](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_1.md)
-- [Client meeting 2](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_2.md)
-- [Client meeting 3](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_3.md)
-- [Client meeting 4](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_4.md)
-- [Client meeting 5](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_5.md)
-- [Client meeting 6](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_6.md)
-- [Client meeting 7](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/client_meetings/client_meeting_7.md)
+
 ### Retrospectives
-- [Retro 0](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_0.md)
-- [Retro 1](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_1.md)
-- [Retro 2](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_2.md)
-- [Retro 3](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_3.md)
-- [Retro 4](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_4.md)
-- [Retro 5](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_5.md)
-- [Retro 6](https://github.com/NikiPOU/elisaohtuprojekti/blob/main/docs/Retros/retrospective_6.md)
 
 ## Backlog
-- [Product backlog](https://github.com/users/NikiPOU/projects/2)
+- [Product backlog](https://github.com/orgs/ohtuprojekti-Elisa/projects/1)
 
