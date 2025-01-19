@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -47,7 +47,6 @@ ExportedObj/
 *.opendb
 *.VC.db
 *.blob
-__pycache__
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -75,3 +74,7 @@ crashlytics-build.properties
 
 # This .gitignore file is provided under the CC0 1.0 Universal (Public Domain Dedication)
 .env
+
+# Python
+.venv
+__pycache__
