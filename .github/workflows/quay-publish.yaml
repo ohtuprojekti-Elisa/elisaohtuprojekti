@@ -3,7 +3,7 @@ name: Publish backend to Qauy.io
 on:
   push:
     branches:
-      - main
+      - heads/main
     tags:
       - '*'
     paths:
