@@ -18,8 +18,8 @@ jobs:
         with:
           image: ohtuproject-elisa-backend
           tags: staging ${{ github.sha }}
-          context: "{{defaultContext}}:backend/data_processing/"
-          containerfiles: Containerfile
+          context: backend/data_processing/
+          containerfiles: backend/data_processing/Containerfile
 
       - name: Push to quay.io
         uses: redhat-actions/push-to-registry@v2
