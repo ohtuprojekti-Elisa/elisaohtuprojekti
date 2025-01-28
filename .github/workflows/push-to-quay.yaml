@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'backend/data_processing/'
+      - './backend/data_processing/'
 
 jobs:
   build-and-push:
