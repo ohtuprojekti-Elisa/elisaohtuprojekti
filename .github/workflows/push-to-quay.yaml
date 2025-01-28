@@ -27,7 +27,7 @@ jobs:
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: latest
-          registry: quay.io
+          registry: quay.io/repository/ohtuprojekti
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
           
