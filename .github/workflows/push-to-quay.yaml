@@ -17,7 +17,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           image: elisaohtuprojekti-backend
-          tags: staging ${{ github.sha }}
+          tags: latest
           context: backend/data_processing/
           containerfiles: backend/data_processing/Containerfile
 
@@ -30,6 +30,3 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
           
-      - name: Test Quay.io login
-        run: |
-          echo "${{ secrets.REGISTRY_PASSWORD }}" | buildah login -u "${{ secrets.REGISTRY_USERNAME }}" quay.io --password-stdin
