@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     env:
-      context: /backend/data_processing
+      context: 'backend/data_processing'
       image_name: ohtuproject-elisa-backend
     runs-on: ubuntu-latest
     steps:
