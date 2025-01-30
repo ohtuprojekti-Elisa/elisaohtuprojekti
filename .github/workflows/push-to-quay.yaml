@@ -1,4 +1,4 @@
-name: Push new image to Quay.io registry
+name: Push backend image to Quay.io
 
 on:
   push:
