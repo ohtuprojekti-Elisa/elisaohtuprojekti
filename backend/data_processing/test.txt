@@ -1,1 +1,1 @@
-TEST:latest:or:is:it
+TEST:2
