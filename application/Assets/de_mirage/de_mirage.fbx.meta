@@ -122,6 +122,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: bombtanks
+    second: {fileID: 2100000, guid: 77c60baa43c085b4cb78e7d14895a127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: brick_ext_04
     second: {fileID: 2100000, guid: 2fbba8c0ce8466c41b6d66f03eb68637, type: 2}
   - first:
@@ -802,6 +807,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: lowpoly_artillerycrate
+    second: {fileID: 2100000, guid: 3702198c37380a2408bd88b18d07f372, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mall_trees_barks01
     second: {fileID: 2100000, guid: e5a8c23ca3e238f46b3d84b739aa1f50, type: 2}
   - first:
@@ -1039,6 +1049,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: plaster_stain_7
     second: {fileID: 2100000, guid: 0fd1752a9046ed847bb5f231a30ba182, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plasterstacks
+    second: {fileID: 2100000, guid: 77eeb0df3c917dc439870cbff68ea1aa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -4895,7 +4910,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -4908,14 +4923,14 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinLightmapResolution: 35
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
+    strictVertexDataChecks: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

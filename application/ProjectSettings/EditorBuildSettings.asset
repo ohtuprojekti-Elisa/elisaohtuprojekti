@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main VR Scene.unity
     guid: 6454010438a93214da4bb542702bba8e
   - enabled: 0
     path: Assets/Samples/XR Interaction Toolkit/2.6.3/Hands Interaction Demo/HandsDemoScene.unity
     guid: 3ff35cecbcc52cc42945cf531638a60a
+  - enabled: 1
+    path: Assets/Scenes/TESTMain VR Scene 1.unity
+    guid: 8e58022ce48269041a0ebacfceaa8e4f
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 0af5a38e5ac197d5a841c60f7f0a8f9a,
       type: 2}
